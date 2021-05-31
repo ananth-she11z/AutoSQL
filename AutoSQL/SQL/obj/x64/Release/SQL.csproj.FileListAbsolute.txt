@@ -1,0 +1,13 @@
+\\192.168.49.84\visualstudio\SQL\SQL\bin\x64\Release\SQL.exe.config
+\\192.168.49.84\visualstudio\SQL\SQL\bin\x64\Release\SQL.exe
+\\192.168.49.84\visualstudio\SQL\SQL\bin\x64\Release\SQL.pdb
+\\192.168.49.84\visualstudio\SQL\SQL\obj\x64\Release\SQL.csprojAssemblyReference.cache
+\\192.168.49.84\visualstudio\SQL\SQL\obj\x64\Release\SQL.exe
+\\192.168.49.84\visualstudio\SQL\SQL\obj\x64\Release\SQL.pdb
+\\192.168.49.84\visualstudio\SQL\SQL\obj\x64\Release\SQL.csproj.CoreCompileInputs.cache
+\\192.168.49.62\visualstudio\SQL\SQL\bin\x64\Release\SQL.exe.config
+\\192.168.49.62\visualstudio\SQL\SQL\bin\x64\Release\SQL.exe
+\\192.168.49.62\visualstudio\SQL\SQL\bin\x64\Release\SQL.pdb
+\\192.168.49.62\visualstudio\SQL\SQL\obj\x64\Release\SQL.csprojAssemblyReference.cache
+\\192.168.49.62\visualstudio\SQL\SQL\obj\x64\Release\SQL.exe
+\\192.168.49.62\visualstudio\SQL\SQL\obj\x64\Release\SQL.pdb
