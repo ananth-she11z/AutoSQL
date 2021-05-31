@@ -1,5 +1,5 @@
 # AutoSQL
-A tool to enumerate and exploit SQL Servers in AD 
+## A tool to Enumerate and Exploit SQL Servers in AD Environments.
 
 ## Features:
 
