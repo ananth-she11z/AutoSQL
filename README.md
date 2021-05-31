@@ -4,7 +4,7 @@
 ## Features:
 
 1) Check authentication and roles on current instance as current logged in user.
-2) Check whici logins can be impersonated.
+2) Checks which logins can be impersonated.
 3) Allows login impersonation.
 4) Allows UNC path injection to grab NET-NTLM hash on Responder or Impacket.
 5) Allows command execution test via xp_cmdshell and sp_OACreate procedures on current instance.
