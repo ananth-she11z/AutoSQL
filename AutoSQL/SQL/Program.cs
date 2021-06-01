@@ -195,7 +195,7 @@ namespace SQL
 
                 command = new SqlCommand(execcmd, con);
                 reader = command.ExecuteReader();
-                Console.WriteLine("[+] As a POC, a file named she11z.txt is saved at C:\Windows\Tasks directory on SQL server");
+                Console.WriteLine("[+] As a POC, a file named she11z.txt is saved at C:\\Windows\\Tasks directory on SQL server");
                 reader.Close();
             }
             else
